@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <meta charset="UTF-8">
+                <title>Color Picker</title>
+    </head>  
+  <body>
+    <script>
+      // your code here
+      const color = "blue"
+      
+      const logColor1 = ()=>
+      console.log( colour );
+      
+      const logColor2 = (color)=> {
+          console.log( color );
+      };
+
+      logColor2("red");
+      const logColor3 = (color) => {
+          if( color === 'green'){
+              let color = 'light green'
+              console.log(color)
+          };
+      };
+      logColor3('green')
+
+      /* The console prints blue when you log `color` because itis defined in a global scope
+      which means it is not within a function hence overrides every other color.
+
+      The logColor1 prints nothing because it represents a local scope and there is no 
+      parameter or color defined within the scope 
+      
+      The logColor2 argument prints red because it has a parameter named color and 
+      this has been defined within the local scope
+      
+      The logColor3 argument prints light green because  it has  a  variable declared as such 
+      with a conditional statement hence if the contion is not met, nothing will be passed to the console */
+    </script>
+  </body>
+</html>

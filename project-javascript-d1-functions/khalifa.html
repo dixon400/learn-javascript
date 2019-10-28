@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Date Formatter
+	</title>
+
+</head>
+  <body>
+    <script>
+      // your code here
+	let year= 2019
+	let month= 10
+	let day= 9
+	let dayOfWeek= 2
+	
+	const showDayName = (dayOfWeek) => {
+	
+	if (dayOfWeek = 1) {
+	console.log(Sunday)
+	} else if (dayOfWeek = 2) {
+	console.log(Monday)
+	} else if (dayOfWeek = 3) {
+	console.log(Tuesday)
+	} else if (dayOfWeek = 4) {
+	console.log(Wednesday)
+	} else if (dayOfWeek = 5) {
+	console.log(Thursday)
+	} else if (dayOfWeek = 6) {
+	console.log(Friday)
+	} else if (dayOfWeek = 7) {
+	console.log(Saturday)
+	} else {
+	console.log(Unknown)}
+
+	};
+
+	const convert2String = (day) => {
+
+	if (day < 10 ) {
+		let newDay = "0" + day 
+		return newDay
+	} else {
+		console.log(day)
+	}
+
+	};
+
+	const convert2String = (month) => {
+
+	if (month < 10 ) {
+	let newMonth =  "0" + month
+	return newMonth
+	} else {
+	console.log(month)
+	}
+
+	};
+
+	const formatDate = (year, month, day) => {
+		return year + '/' + convert2String(month) + '/' + convert2String(day)
+	};
+
+	const formatDateChristmas = (year=2020, month=01, day=01) => {
+	console.log(formatDate)
+
+	}
+
+    </script>
+  </body>
+</html>

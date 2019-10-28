@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+                <meta charset="UTF-8">
+                <title>Shoes Shop</title>
+    </head>
+            
+  <body>
+    <script>
+      // your code here
+      let shoes = ['Casual Shoes','Sneakers','Sandals','Boat Shoes','Dress Shoes'];
+
+      console.log(shoes[0]); 
+      console.log(shoes[shoes.length - 1]);
+
+      shoes[shoes.length - 1] = 'Derby Shoes';
+     console.log(shoes[shoes.length - 1]);
+
+     shoes.push('Espadrilles');  
+     console.log(shoes[shoes.length - 1])
+
+
+     let remove = shoes.splice(3);
+     console.log(shoes[shoes.length - 1]); 
+
+     const showLength = (shoeArray) => {
+     console.log(shoeArray.length);
+     } ;
+     showLength(shoes);
+    </script>
+  </body>
+</html>
