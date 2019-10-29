@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Shopping list
+        </title>
+    </head>
+  <body>
+    <script>
+      // your code here
+        let num;
+        for(let num = 1; num< 12; num +=2 ){
+            console.log(num);
+        };
+        let revNum;
+        for (let revNum =10; revNum> 0; revNum-=2){
+            
+            console.log(revNum);
+        } ;
+
+        let myList = ['Fruits', 'Milk', 'Cheese', 'Baken', 'Bread'];
+        for (k = 0; k < myList.length; k++ ){
+            console.log(myList[k]);
+        };
+
+        let fruits = [['apple','orange','banana'],['coconut','cumbersome'],
+        ['starbery','bluebery']];
+        for (let l = 0; l < fruits.length; l++){
+            for(let m = 0; m < fruits[l].length; m++){
+                console.log(fruits[l][m]);
+            };
+        };
+
+        let n = myList.length-1;
+        while (n > -1){
+            console.log( myList[n] );
+            n--;
+            };
+
+    </script>
+  </body>
+</html>
